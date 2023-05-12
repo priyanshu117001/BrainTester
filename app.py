@@ -13,7 +13,7 @@ import classification
 import pickle
 from keras.utils.layer_utils import count_params
 import pandas as pd
-import contact
+
 from keras.applications.vgg16 import preprocess_input,VGG16
 import tensorflow as tf
 
@@ -325,6 +325,7 @@ if selected == "Classification Methods":
 
 
 if selected =="About & Contact":
+    import contact
     st.title("About")
     col1,col2,col3=st.columns([1,8,1])
     with col2:

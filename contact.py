@@ -14,13 +14,15 @@ linked_in='''
 <a href="https://www.linkedin.com/in/priyanshu117001/">Linked In</a>
 '''
 
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
+# def local_css(file_name):
+#     with open(file_name) as f:
+#         st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
+
+# local_css("css/streamlit.css")
 
 def main():
     st.caption("👋 Hi, I am Priyanshu Agarwal")
     st.markdown(linked_in,unsafe_allow_html=True)
     st.header(":mailbox: Get In Touch With Me!")
     st.markdown(contact_form,unsafe_allow_html=True)
-    local_css("css/streamlit.css")
+    
